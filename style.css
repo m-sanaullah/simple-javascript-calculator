@@ -26,5 +26,11 @@
     margin-bottom: 10px;
 }
 .last input{
-    width: 126px;
+    width: 83px;
+}
+.developer{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: blueviolet;
 }

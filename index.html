@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My calculator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="style.css">
 
     <script type="text/javascript">
+//onclick="x = form.display.value.slice(0, -1);form.display.value = x;" for CE button
         function calculate(x){
             form.display.value = form.display.value + x;
         }
-    </script>
+    </script> 
 </head>
 <body>
 
@@ -49,13 +50,19 @@
                     <input type="button" name="btn" value="/" class="btn btn-warning" onclick="calculate(this.value)" >
                 </div>
                 <div class="last">
-                    <input type="button" name="btn" value="C" class="btn btn-danger" onclick="display.value = null" >
+                    <input type="button" name="btn" value="C" class="btn btn-danger" onclick="form.display.value = null" >
+                    <input type="button" name="btn" value="CE" class="btn btn-danger"
+                    onclick="ap=form.display.value.slice(0,-1);form.display.value=ap;" >
                     <input type="button" name="btn" value="=" class="btn btn-success" onclick="form.display.value = eval(form.display.value)" >
                     
-                </div>
+                </div><!--onclick="x = form.display.value.slice(0, -1);form.display.value = x;"-->
             </div>
 
         </form>
+    </div>
+
+    <div class="developer">
+        Developed by : <a href="https://www.facebook.com/mdsanaullah.mdsanaullah.963">Sanaullah (facebook link)</a><br>or <a href="mailto:rrbsanaullah2000@gmail.com">Email me here.</a>
     </div>
     
 </body>
